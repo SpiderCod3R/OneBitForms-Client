@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AppRoutes, appRouting } from './app-routing.module';
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { MaterializeModule } from 'ng2-materialize';
@@ -15,24 +15,29 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from './forms/forms.module';
 import { AnswersModule } from './answers/answers.module';
 
+import { HttpModule } from '@angular/http';
+import { Angular2TokenService } from 'angular2-token';
+import { UsersModule } from './users/users.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     RouterModule,
-    appRouting,
+    routing,
+    BrowserAnimationsModule,
     MaterializeModule.forRoot(),
     ColorPickerModule,
-    ChartsModule,
-    FormsModule,
-    AnswersModule
+    ChartsModule
   ],
-  providers: [],
+  providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
