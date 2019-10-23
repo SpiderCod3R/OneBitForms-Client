@@ -35,7 +35,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MaterializeModule.forRoot(),
     ColorPickerModule,
-    ChartsModule
+    ChartsModule,
+    FormsModule,
+    AnswersModule,
+    UsersModule,
   ],
   providers: [Angular2TokenService],
   bootstrap: [AppComponent]
