@@ -19,6 +19,9 @@ import { HttpModule } from '@angular/http';
 import { Angular2TokenService } from 'angular2-token';
 import { UsersModule } from './users/users.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormService } from 'src/services/form.service';
+import { AnswerService } from 'src/services/answer.service';
+import { QuestionService } from 'src/services/question.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UsersModule,
   ],
   providers: [
-    Angular2TokenService
+    Angular2TokenService,
+    AnswerService,
+    FormService,
+    QuestionService
   ],
   bootstrap: [AppComponent]
 })
