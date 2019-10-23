@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
   constructor(
     private _tokenService: Angular2TokenService,
     private toastService: MzToastService,
@@ -25,7 +24,6 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this._tokenService.signIn(this._signInData).subscribe(
       res => {
-        this.toastService.show("We appreciate that you're here", 8000, 'green');
         this.router.navigate(['/forms']);
       }, error => {
         this._signInData = <SignInData>{};

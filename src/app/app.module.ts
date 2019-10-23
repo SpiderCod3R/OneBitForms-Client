@@ -40,7 +40,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AnswersModule,
     UsersModule,
   ],
-  providers: [Angular2TokenService],
+  providers: [
+    Angular2TokenService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
