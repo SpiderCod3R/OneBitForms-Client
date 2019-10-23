@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutes, appRouting } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MaterializeModule } from 'ng2-materialize';
@@ -23,7 +24,8 @@ import { AnswersModule } from './answers/answers.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule,
+    appRouting,
     MaterializeModule.forRoot(),
     ColorPickerModule,
     ChartsModule,
