@@ -25,6 +25,13 @@ import { QuestionListComponent } from './question-list/question-list.component';
   exports: [
     FormListComponent
   ],
-  declarations: [FormListComponent, FormEditComponent, ActiveComponent, FormFormComponent, QuestionFormComponent, QuestionListComponent]
+  declarations: [
+    FormListComponent, 
+    FormEditComponent, 
+    ActiveComponent, 
+    FormFormComponent, 
+    QuestionFormComponent, 
+    QuestionListComponent
+  ]
 })
 export class FormsModule { }
