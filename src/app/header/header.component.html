@@ -9,7 +9,7 @@
         <li><a href="#" routerLink="/register">Register</a></li>
       </div>
       <div *ngIf="_tokenService.currentUserData != null">
-        <li><strong>Seja bem vindo - {{ _tokenService.currentUserData.email }}</strong></li>
+        <li><strong>Welcome - {{ _tokenService.currentUserData.email }}</strong></li>
         <li><a href (click)="signOut()">Logout</a></li>
       </div>
     </ul>

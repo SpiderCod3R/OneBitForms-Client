@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MzToastService } from 'ng2-materialize';
 
-import { FormService } from '../../../services/form.service'
-import { Form } from '../../../models/form.model';
-import { Question } from '../../../models/question.model';
+import { FormService } from '../../shared/services/form.service'
+import { Form } from '../../shared/models/form.model';
+import { Question } from '../../shared/models/question.model';
 
 @Component({
   selector: 'app-form-list',

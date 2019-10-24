@@ -19,9 +19,9 @@ import { HttpModule } from '@angular/http';
 import { Angular2TokenService } from 'angular2-token';
 import { UsersModule } from './users/users.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormService } from 'src/services/form.service';
-import { AnswerService } from 'src/services/answer.service';
-import { QuestionService } from 'src/services/question.service';
+import { FormService } from 'src/app/shared/services/form.service';
+import { AnswerService } from 'src/app/shared/services/answer.service';
+import { QuestionService } from 'src/app/shared/services/question.service';
 
 @NgModule({
   declarations: [
